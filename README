@@ -1,0 +1,57 @@
+***********************************************************
+*   Cannon Duels, a game for Amstrad CPC computers        *
+*       by David Asta in 2018                             *
+***********************************************************
+
+Cannon Duels is a 1 or 2 players game for Amstrad CPC,
+developed with CPCtelera and other tools for the 
+#CPCRetroDev 2018.
+
+Two Cannons are located at each side of the screen and 
+can shoot at each other. At the centre of the screen
+there is a group of bricks. Cannon Balls will destroy the 
+first brick they encounter in their path or subtract a 
+live from the opposite player if hitting the Cannon.
+When hitting a Brick there is chance to get a Power Up. 
+When a Cannon is hit by a Cannon Ball, it loses a live. 
+Reaching 0 ends the game. A player gets an Extra Live 
+every  time a collects 464 points.
+
+Read the GameManual.pdf for more details on which Power Ups
+are available and what they do.
+
+The Source code and assets are licensed under MIT License,
+as explained in the file LICENSE.
+
+
+How to play
+-----------
+Load cduels.dsk and type run"loader.bas
+
+
+
+Controls
+--------
+- A = Move left Cannon Up
+- Z = Move left Cannon Down
+- X = Shot from left Cannon
+- 1 (numeric pad) = Move right Cannon Up
+- 0 (numeric pad) = Move right Cannon Down
+- . (numeric pad) = Shot from right Cannon
+
+On the Game Menu you can select 1 or 2 Players with the 
+keys 1 and 2.
+
+Once in the Game, the ESC key returns to the Menu.
+
+How to compile 
+--------------
+make  will compile the project and generate .DSK and .CDT files
+
+Instead, run createDISK.sh  
+it runs make and creates a DSK with a nice loading screen.
+
+Or, run createTAPE.sh if you want a CDT file for emulating
+a cassette.
+
+Finally load cduels.dsk from mydisk/ and type: run"loader.bas
